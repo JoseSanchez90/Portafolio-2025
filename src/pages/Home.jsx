@@ -21,6 +21,7 @@ import telegram from '../assets/telegram.png'
 import linkedin from '../assets/linkedin.png'
 import gmail from '../assets/gmail.png'
 import Footer from '../components/Footer'
+import NavbarMobile from '../components/NavbarMobile'
 
 function Home() {
 
@@ -29,23 +30,24 @@ function Home() {
     <section className="w-full h-screen bg-slate-100 dark:bg-gray-950">
 
       <Navbar />
+      <NavbarMobile />
 
       {/* PERFIL  */}
       
-      <div className="grid grid-cols-2 justify-items-center px-40 py-14 items-center" id="inicio">
-        <div className="flex flex-col gap-4">
-            <h1 className="text-2xl font-bold text-emerald-600">JOSE SANCHEZ TRUJILLO</h1>
+      <div className="flex flex-col md:grid md:grid-cols-2 justify-items-center pt-24 md:pt-16 md:px-40 px-8 py-14 gap-5 md:gap-0 items-center" id="inicio">
+        <div className="flex flex-col gap-2 md:gap-4 text-center md:text-start">
+            <h1 className="text-xl md:text-2xl font-extrabold text-emerald-600">JOSE SANCHEZ TRUJILLO</h1>
           <div className="animation">
-            <h2 className="first text-xl font-bold text-white"><h2>Help Desk Analyst</h2></h2>
-            <h2 className="second text-xl font-bold text-white"><h2>FrontEnd Developer</h2></h2>
-            <h2 className="third text-xl font-bold text-white"><h2>Software Support</h2></h2>
+            <h2 className="first text-lg md:text-xl font-bold text-white"><h2>Help Desk Analyst</h2></h2>
+            <h2 className="second text-lg md:text-xl font-bold text-white"><h2>FrontEnd Developer</h2></h2>
+            <h2 className="third text-lg md:text-xl font-bold text-white"><h2>Software Support</h2></h2>
           </div>
-            <p className="text-base font-medium text-zinc-600 dark:text-zinc-400">Mi experiencia se basa en la práctica constante y la realización de proyectos web utilizando tecnologías como HTML5, CSS3, JavaScript y ReactJS, así como librerías de diseño como Bootstrap y Tailwind CSS. Soy apasionado por crear experiencias digitales de alta calidad y me caracterizo por mi proactividad en la búsqueda de nuevos desafíos que me permitan seguir aprendiendo y creciendo profesionalmente.</p>
+            <p className="text-sm md:text-base font-normal md:font-medium text-zinc-600 dark:text-zinc-400">Mi experiencia se basa en la práctica constante y la realización de proyectos web utilizando tecnologías como HTML5, CSS3, JavaScript y ReactJS, así como librerías de diseño como Bootstrap y Tailwind CSS. Soy apasionado por crear experiencias digitales de alta calidad y me caracterizo por mi proactividad en la búsqueda de nuevos desafíos que me permitan seguir aprendiendo y creciendo profesionalmente.</p>
         </div>
         <div>
           <img className=" rounded-3xl size-40 sm:size-64 lg:size-60 xl:size-72 2xl:size-96 flex-shrink-0 object-cover shadow-[10px_10px_rgba(0,_98,_90,_0.8),_15px_15px_rgba(0,_98,_90,_0.6),_20px_20px_rgba(0,_98,_90,_0.4),_25px_25px_rgba(0,_98,_90,_0.2),_30px_30px_rgba(0,_98,_90,_0.1)]" src={Profile} alt="Foto de perfil" />
         </div>
-        <div className="w-full flex flex-row pt-8 gap-12">
+        <div className="w-full flex flex-row pt-8 gap-8 md:gap-12">
           <button type="submit" className="flex justify-center gap-2 items-center shadow-xl text-base bg-gray-800 dark:bg-slate-200 backdrop-blur-md isolation-auto border-gray-800 dark:border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-green-600 text-gray-50 dark:text-gray-950 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-3 py-2 overflow-hidden border-2 rounded-full group">Conversemos
             <img src={whatsapp} alt="whatsapp" className="w-6" />
           </button>
@@ -65,11 +67,11 @@ function Home() {
       {/* LENGUAJES, LIBRERIAS Y FRAMEWORKS */}
 
       <div className="w-full h-screen bg-slate-100 dark:bg-slate-950" id="habilidades">
-        <div className="flex flex-col items-center gap-20 py-44">
+        <div className="flex flex-col items-center gap-10 md:gap-20 md:py-44 py-40">
           <div className="flex justify-center">
-            <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Lenguajes, Librerias y Frameworks</h2>
+            <h2 className="text-xl md:text-2xl font-semibold md:font-bold text-gray-800 dark:text-white">Lenguajes, Librerias y Frameworks</h2>
           </div>
-          <div className="images-shadow flex flex-row gap-14">
+          <div className="images-shadow grid grid-cols-2 md:flex md:flex-row md:gap-14 gap-10">
             <div className="flex flex-col items-center gap-2">
               <img src={html} alt={html} className="w-16 hover:scale-110 duration-200" />
               <p className="text-sm font-medium text-black dark:text-white">Html</p>
@@ -110,11 +112,11 @@ function Home() {
       {/* PROYECTOS  */}
 
       <div className="w-full h-screen bg-slate-100 dark:bg-slate-950" id="proyectos">
-        <div className="flex flex-col justify-center gap-10 py-10 px-20">
+        <div className="flex flex-col justify-center md:gap-10 md:py-10 py-2 md:px-20 px-1">
           <div className="w-full flex justify-center">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Proyectos Web</h2>
           </div>
-          <div className="grid grid-cols-2 px-60 gap-5">
+          <div className="flex flex-col md:grid md:grid-cols-2 px-60 gap-5">
             <div>
               <div className="group relative block w-92 h-52">
                 <div className="relative flex h-full w-full transform items-center border-2 border-black bg-slate-200 transition-transform group-hover:scale-105 overflow-hidden rounded-xl">
