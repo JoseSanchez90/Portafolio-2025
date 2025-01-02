@@ -1,4 +1,8 @@
   
+  html {
+    scroll-behavior: smooth;
+  }
+
   .animation {
     height: 50px;
     padding: 10px 0px;
@@ -36,4 +40,23 @@
     80% {margin-top: -90px;}
     90% {margin-top: 0;}
     100% {margin-top: 0;}
+  }
+
+  /* imagenes css  */
+
+  :root {
+    --shadow-color: rgba(0, 0, 0, 0.8); /* Modo claro */
+  }
+
+  .dark {
+    --shadow-color: rgba(255, 255, 255, 0.6); /* Modo oscuro */
+  }
+  
+  .images-shadow > div > img {
+    filter: drop-shadow(0 0 10px var(--shadow-color));
+  }
+
+  .images-shadow > div > img:hover {
+    filter: drop-shadow(0 0 30px var(--shadow-color));
+    transition-duration: 500ms;
   }

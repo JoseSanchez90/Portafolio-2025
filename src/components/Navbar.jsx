@@ -11,8 +11,13 @@ function Navbar() {
     }
     return "dark";
   })
+  
+    // Modo dia y noche
 
-      // Modo dia y noche
+  const handleChangeTheme = () => {
+    setTheme(prevTheme => prevTheme === "light" ? "dark" : "light")
+  }
+
       useEffect(()=> {
         if (theme === "dark") {
             document.querySelector('html').classList.add('dark')
@@ -20,10 +25,6 @@ function Navbar() {
             document.querySelector('html').classList.remove('dark')
         }
     }, [theme])
-
-    const handleChangeTheme = () => {
-        setTheme(prevTheme => prevTheme === "light" ? "dark" : "light")
-    }
     
   return (
 
