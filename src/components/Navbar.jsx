@@ -6,10 +6,10 @@ import { useState } from 'react';
 function Navbar() {
 
   const [theme, setTheme] = useState(() => {
-    if(window.matchMedia("(prefers-color-scheme: dark)").matches){
-        return "dark";
+    if(window.matchMedia("(prefers-color-scheme: light)").matches){
+        return "light";
     }
-    return "light";
+    return "dark";
   })
 
       // Modo dia y noche
@@ -27,14 +27,14 @@ function Navbar() {
     
   return (
 
-    <header className="w-full h-screen bg-slate-100 dark:bg-gray-950">
+    <header className="w-full bg-slate-100 dark:bg-gray-950">
         <nav className="w-full flex flex-row justify-between items-center px-40 py-5">
-            <img src={Logo} alt={Logo} className="w-12" />
+            <img src={Logo} alt={Logo} className="w-10" />
             <div className="flex items-center gap-12 text-base font-semibold">
-                <li className="list-none hover:animate-jump dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#">Inicio</a></li>
-                <li className="list-none hover:animate-jump dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#">Habilidades</a></li>
-                <li className="list-none hover:animate-jump dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#">Proyectos</a></li>
-                <li className="list-none hover:animate-jump dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#">Contacto</a></li>
+                <li className="list-none hover:scale-110 duration-150 dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#">Inicio</a></li>
+                <li className="list-none hover:scale-110 duration-150 dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#">Habilidades</a></li>
+                <li className="list-none hover:scale-110 duration-150 dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#">Proyectos</a></li>
+                <li className="list-none hover:scale-110 duration-150 dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#">Contacto</a></li>
 
                 <label className="ui-switch">
                   <input type="checkbox" />
