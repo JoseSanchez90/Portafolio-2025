@@ -32,10 +32,10 @@ function Navbar() {
         <nav className="w-full hidden md:flex md:flex-row justify-between items-center px-40 py-5">
             <img src={Logo} alt={Logo} className="w-10" />
             <div className="flex items-center gap-12 text-base font-semibold">
-                <li className="list-none hover:scale-110 duration-150 dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#">Inicio</a></li>
-                <li className="list-none hover:scale-110 duration-150 dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#">Habilidades</a></li>
-                <li className="list-none hover:scale-110 duration-150 dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#">Proyectos</a></li>
-                <li className="list-none hover:scale-110 duration-150 dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#">Contacto</a></li>
+                <li className="list-none hover:scale-110 duration-150 dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#inicio">Inicio</a></li>
+                <li className="list-none hover:scale-110 duration-150 dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#habilidades">Habilidades</a></li>
+                <li className="list-none hover:scale-110 duration-150 dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#proyectos">Proyectos</a></li>
+                <li className="list-none hover:scale-110 duration-150 dark:text-white text-gray-950"><a className="hover:text-green-500 " href="#contacto">Contacto</a></li>
 
                 <label className="ui-switch">
                   <input type="checkbox" />
