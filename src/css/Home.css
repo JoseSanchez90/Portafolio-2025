@@ -52,11 +52,11 @@
     --shadow-color: rgba(255, 255, 255, 0.6); /* Modo oscuro */
   }
   
-  .images-shadow > div > img {
+  .images-shadow > div > a > img {
     filter: drop-shadow(0 0 10px var(--shadow-color));
   }
 
-  .images-shadow > div > img:hover {
+  .images-shadow > div > a > img:hover {
     filter: drop-shadow(0 0 30px var(--shadow-color));
     transition-duration: 500ms;
   }

@@ -28,7 +28,7 @@ function Navbar() {
     
   return (
 
-    <header className="w-full bg-slate-100 dark:bg-gray-950">
+    <header className="w-full bg-white dark:bg-gray-950">
         <nav className="w-full hidden md:flex md:flex-row justify-between items-center px-40 py-5">
             <img src={Logo} alt={Logo} className="w-16" />
             <div className="flex items-center gap-12 text-base font-semibold">
