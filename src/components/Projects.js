@@ -17,7 +17,7 @@ const projects = [
     {
       image: kazali,
       title: "Web Hardware Gamer",
-      description: "Comercio de hardware para PC y otros componentes, pensado en el publico Gamer.",
+      description: "Comercio de hardware para PC y otros componentes gamer.",
       techStack: [
         { name: "HTML", icon: html },
         { name: "CSS", icon: css },

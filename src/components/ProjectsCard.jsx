@@ -6,7 +6,7 @@ function ProjectsCard() {
 
     <div className="flex flex-col gap-4 md:gap-8 px-12 md:grid md:grid-cols-2 md:px-40 2xl:grid-cols-4 2xl:px-32">
       {projects.map((project, index) => (
-        <div key={index} className="group relative block h-36 md:h-48 w-full">
+        <div key={index} className="group relative block h-32 md:h-48 w-full">
           <div className="relative flex h-full w-full transform items-center border-2 border-black bg-slate-200 transition-transform group-hover:scale-105 overflow-hidden md:rounded-xl">
             <div className="inset-0 flex flex-col transition-opacity group-hover:absolute group-hover:opacity-0 gap-4">
               <img src={project.image} alt={project.title} className="w-full h-full object-cover" />

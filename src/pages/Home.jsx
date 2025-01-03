@@ -62,42 +62,42 @@ function Home() {
       {/* LENGUAJES, LIBRERIAS Y FRAMEWORKS */}
 
       <div className="w-full h-full bg-slate-100 dark:bg-slate-950" id="habilidades">
-        <div className="flex flex-col items-center gap-10 md:gap-20 md:py-44 py-60 px-8">
+        <div className="flex flex-col items-center gap-16 md:gap-20 md:py-44 py-60 px-8">
           <div className="flex justify-center">
             <h2 className="text-xl md:text-2xl font-semibold text-center md:font-bold text-gray-800 dark:text-white">Lenguajes, Librerias y Frameworks</h2>
           </div>
-          <div className="images-shadow grid grid-cols-4 md:flex md:flex-row md:gap-14 gap-6">
+          <div className="images-shadow grid grid-cols-4 md:flex md:flex-row md:gap-14 gap-6 px-5">
             <div className="flex flex-col items-center gap-2">
               <img src={html} alt={html} className="w-9 md:w-16 hover:scale-110 duration-200" />
-              <p className="text-sm font-medium text-black dark:text-white">Html</p>
+              <p className="text-xs md:text-sm font-medium text-black dark:text-white">Html</p>
             </div>
             <div className="flex flex-col items-center gap-2">
               <img src={css} alt={css} className="w-9 md:w-16 hover:scale-110 duration-200" />
-              <p className="text-sm font-medium text-black dark:text-white">Css</p>
+              <p className="text-xs md:text-sm font-medium text-black dark:text-white">Css</p>
             </div>
             <div className="flex flex-col items-center gap-2">
               <img src={js} alt={js} className="w-9 md:w-16 hover:scale-110 duration-200" />
-              <p className="text-sm font-medium text-black dark:text-white">JavaScript</p>
+              <p className="text-xs md:text-sm font-medium text-black dark:text-white">JavaScript</p>
             </div>
             <div className="flex flex-col items-center gap-2">
               <img src={tailwind} alt={tailwind} className="w-9 md:w-16 hover:scale-110 duration-200" />
-              <p className="text-sm font-medium text-black dark:text-white">Tailwind</p>
+              <p className="text-xs md:text-sm font-medium text-black dark:text-white">Tailwind</p>
             </div>
             <div className="flex flex-col items-center gap-2">
               <img src={bootstrap} alt={bootstrap} className="w-9 md:w-16 hover:scale-110 duration-200" />
-              <p className="text-sm font-medium text-black dark:text-white">BootStrap</p>
+              <p className="text-xs md:text-sm font-medium text-black dark:text-white">BootStrap</p>
             </div>
             <div className="flex flex-col items-center gap-2">
               <img src={react} alt={react} className="w-9 md:w-16 hover:scale-110 duration-200" />
-              <p className="text-sm font-medium text-black dark:text-white">ReactJS</p>
+              <p className="text-xs md:text-sm font-medium text-black dark:text-white">ReactJS</p>
             </div>
             <div className="flex flex-col items-center gap-2">
               <img src={github} alt={github} className="w-9 md:w-16 hover:scale-110 duration-200" />
-              <p className="text-sm font-medium text-black dark:text-white">GitHub</p>
+              <p className="text-xs md:text-sm font-medium text-black dark:text-white">GitHub</p>
             </div>
             <div className="flex flex-col items-center gap-2">
               <img src={firebase} alt={firebase} className="w-9 md:w-16 hover:scale-110 duration-200" />
-              <p className="text-sm font-medium text-black dark:text-white">Firebase</p>
+              <p className="text-xs md:text-sm font-medium text-black dark:text-white">Firebase</p>
             </div>        
           </div>
         </div>
@@ -107,9 +107,9 @@ function Home() {
       {/* PROYECTOS  */}
 
       <div className="w-full h-screen bg-slate-100 dark:bg-slate-950" >
-        <div className="flex flex-col justify-center gap-4 md:gap-10 md:py-10 py-24 md:px-20 px-1">
+        <div className="flex flex-col justify-center gap-4 md:gap-10 md:py-10 py-20 md:px-20 px-1" id="proyectos">
           <div className="w-full flex justify-center">
-            <h2 className="text-2xl font-bold text-gray-800 dark:text-white" id="proyectos">Proyectos Web</h2>
+            <h2 className="text-2xl font-bold text-gray-800 dark:text-white" >Proyectos Web</h2>
           </div>
           <ProjectsCard />
         </div>
