@@ -42,7 +42,7 @@ function Home() {
         <div>
           <img className=" rounded-3xl size-40 sm:size-64 lg:size-60 2xl:size-72 flex-shrink-0 object-cover shadow-[10px_10px_rgba(0,_98,_90,_0.8),_15px_15px_rgba(0,_98,_90,_0.6),_20px_20px_rgba(0,_98,_90,_0.4),_25px_25px_rgba(0,_98,_90,_0.2),_30px_30px_rgba(0,_98,_90,_0.1)]" src={Profile} alt="Foto de perfil" />
         </div>
-        <div className="w-full flex flex-row justify-center md:justify-start pt-8 md:pt-0 gap-4 md:gap-12">
+        <div className="w-full flex flex-row justify-center md:justify-start pt-8 md:pt-6 2xl:pt-0 gap-4 md:gap-12">
           <a href="https://api.whatsapp.com/send?phone=51960041583" target="_blank">
             <button type="submit" className="flex justify-center gap-2 items-center shadow-xl text-xs bg-gray-800 dark:bg-slate-200 backdrop-blur-md isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-green-600 text-gray-50 dark:text-gray-950 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative px-3 py-2 md:px-6 md:py-2 overflow-hidden rounded-full group">Conversemos
             <img src={whatsapp} alt="whatsapp" className="w-6" />
