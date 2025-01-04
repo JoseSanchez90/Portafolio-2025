@@ -13,7 +13,7 @@ import web from '../assets/web.png'
 import nextjs from '../assets/nextjs.png'
 
 const projects = [
-
+  //Proyectos agregados
     {
       image: kazali,
       title: "Web Hardware Gamer",
@@ -82,7 +82,7 @@ const projects = [
         githubIcon: github,
         webIcon: web,
       },
-    // Agrega más proyectos según sea necesario
+    // Se agrega mas proyectos de ser necesario
   ];
 
   export default projects;
